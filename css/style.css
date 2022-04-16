@@ -6,9 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
-/* x-small */
-
 /* small */
 @media (min-width: 768px) {
   .container {
@@ -29,6 +28,7 @@ html {
 }
 
 body {
+  height: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -53,18 +53,11 @@ ul {
   position: relative;
   background-color: #0e0e0e;
   width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100%;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   animation: myAnim 1s ease 2.3s 1 normal forwards;
-  -webkit-animation: myAnim 1s ease 2.7s 1 normal forwards;
 }
 
 @keyframes myAnim {
@@ -79,14 +72,8 @@ ul {
 
 .intro .outbox {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -94,29 +81,22 @@ ul {
   overflow: hidden;
   width: 90px;
   height: 90px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
 }
 
 .intro .box:nth-child(1) {
   animation: rotate 0.3s ease 1.2s forwards;
-  -webkit-animation: rotate 0.3s ease 1.2s forwards;
 }
 
 .intro .box:nth-child(2) {
   animation: rotatetwo 0.3s ease 1.2s forwards;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  -webkit-animation: rotatetwo 0.3s ease 1.2s forwards;
 }
 
 .intro .box .line {
   display: inline-block;
   position: absolute;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 5px;
   height: 100%;
   background-color: white;
@@ -136,22 +116,18 @@ ul {
 
 .intro .box:nth-child(1) .line:nth-child(2) {
   animation: anim 0.3s ease forwards;
-  -webkit-animation: anim 0.3s ease forwards;
 }
 
 .intro .box:nth-child(2) .line:nth-child(2) {
   animation: anim 0.3s ease 0.3s forwards;
-  -webkit-animation: anim 0.3s ease 0.3s forwards;
 }
 
 .intro .box:nth-child(1) .line:nth-child(1) {
   animation: animtwo 0.3s ease 0.6s forwards;
-  -webkit-animation: animtwo 0.3s ease 0.6s forwards;
 }
 
 .intro .box:nth-child(2) .line:nth-child(1) {
   animation: animtwo 0.3s ease 0.9s forwards;
-  -webkit-animation: animtwo 0.3s ease 0.9s forwards;
 }
 
 @keyframes anim {
@@ -171,20 +147,12 @@ ul {
 @keyframes rotate {
   100% {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
   }
 }
 
 @keyframes rotatetwo {
   100% {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
   }
 }
 
@@ -194,10 +162,8 @@ ul {
   font-weight: normal;
   font-family: "Syne Mono", monospace;
   color: white;
-  -webkit-animation: letter 1s ease 0s 1 normal forwards;
-  animation: letter 1s ease 0s 1 normal forwards;
+  animation: letter 1s ease 1.4s 1 normal forwards;
   opacity: 0;
-  -webkit-animation: letter 1.2s ease 1.5s 1 normal forwards;
 }
 @keyframes letter {
   0% {
@@ -208,9 +174,10 @@ ul {
     opacity: 1;
   }
 }
+
 @media (max-width: 767px) {
   .intro .outbox h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .intro .box {
     width: 70px;
