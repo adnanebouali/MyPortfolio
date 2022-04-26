@@ -48,10 +48,14 @@ ul {
 
 /* Start Header  */
 header {
-  padding: 30px 10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 header .container {
   position: relative;
+  top: 30px;
 }
 .toggle-btn {
   background-color: inherit;
@@ -68,7 +72,7 @@ header .container {
   display: block;
   width: 70%;
   height: 3px;
-  background-color: #040404;
+  background-color: #ffffff;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -106,6 +110,13 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+.toggle-btn.active + .navigation {
+  background-color: rgba(0, 0, 0, 95%);
+  transition: 0.5s ease;
+}
+.toggle-btn:not(.active) + .navigation {
+  transition: 0.8s ease;
+}
 
 .navigation ul {
   list-style: none;
@@ -114,13 +125,19 @@ header .container {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .navigation ul {
+    font-size: 1.9rem;
+  }
+}
 .navigation ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .navigation ul li {
+  padding: 0 20px;
   transform: translateX(-100vw);
-  transition: 0.5s cubic-bezier(0.48, -0.66, 0.69, 0.54);
+  transition: 0.5s;
 }
 
 .navigation ul li:nth-of-type(1) {
@@ -140,3 +157,32 @@ header .container {
 }
 
 /* End Header  */
+/* Start Landing  */
+.landing {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../images/landing.png);
+  background-size: cover;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 75%);
+}
+
+.landing .intro {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+  color: white;
+}
+/* End Landing  */
