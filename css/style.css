@@ -35,6 +35,15 @@ body {
   font-family: "Updock", cursive;
   */
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
 ul {
   list-style: none;
 }
