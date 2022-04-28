@@ -1,6 +1,6 @@
 /* Start global rules  */
 :root {
-  --main-color: #5e25ff;
+  --main-color: #2f89fc;
   --sec-color: #7d7d7d;
 }
 
@@ -35,10 +35,15 @@ body {
   font-family: "Updock", cursive;
   */
 }
+h1 {
+  padding: 0;
+  margin: 0;
+}
 h1,
 h2,
 h3,
-h4 {
+h4,
+a {
   font-family: "Poppins", sans-serif;
 }
 p {
@@ -115,12 +120,16 @@ header .container {
   left: 0;
   width: 100%;
   height: 100%;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .toggle-btn.active + .navigation {
   background-color: rgba(0, 0, 0, 95%);
+  visibility: visible;
+
   transition: 0.5s ease;
 }
 .toggle-btn:not(.active) + .navigation {
@@ -146,9 +155,11 @@ header .container {
 .navigation ul li {
   padding: 0 20px;
   transform: translateX(-100vw);
-  transition: 0.5s;
+  transition: 0.5s, background-color 0.1s ease;
 }
-
+.navigation ul li:hover {
+  background-color: #2f89fc;
+}
 .navigation ul li:nth-of-type(1) {
   transition-delay: 0s;
 }
@@ -189,9 +200,72 @@ header .container {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  width: fit-content;
   text-align: center;
-  width: 320px;
-  max-width: 100%;
   color: white;
+}
+.landing .intro span {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 5rem);
+
+  font-weight: bold;
+  color: var(--main-color);
+}
+.landing .intro h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+  font-weight: normal;
+}
+.landing .intro p {
+  font-size: clamp(1rem, 1.5vw, 5rem);
+  font-weight: normal;
+}
+.landing .intro a {
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+.landing .intro a:hover {
+  border-color: transparent;
+  background-color: var(--main-color);
+}
+.landing .intro .social {
+  position: relative;
+  bottom: -130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 0 25px;
+}
+.landing .intro .social i {
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.2s ease;
+}
+.landing .intro .social i:hover {
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .landing {
+    background-position: 70%;
+  }
+  .landing .intro .social {
+    gap: 25px;
+  }
+  .landing .intro .social i {
+    font-size: 28px;
+  }
 }
 /* End Landing  */
