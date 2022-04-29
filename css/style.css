@@ -30,7 +30,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: #121212;
+  background: #0e0e0e;
   position: relative;
   /*font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
@@ -60,6 +60,18 @@ body:after {
   border: 2px solid rgba(255, 255, 255, 0.05);
   z-index: -1;
   transform: rotate(-30deg);
+}
+@media (max-width: 480px) {
+  body:before {
+    top: 450px;
+    left: -200px;
+    bottom: 0;
+  }
+  body:after {
+    top: -290px;
+    right: -120px;
+    bottom: 0;
+  }
 }
 section {
   height: 100vh;
