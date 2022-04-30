@@ -32,6 +32,7 @@ body {
   margin: 0;
   background: #0e0e0e;
   position: relative;
+  color: white;
   /*font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Updock", cursive;
@@ -307,3 +308,17 @@ header .container {
   }
 }
 /* End Landing  */
+/* Start About  */
+.about {
+}
+.about .container {
+  display: flex;
+}
+.about .container img {
+  height: 300px;
+}
+.about .container .content .box {
+  display: flex;
+}
+
+/* End About  */
