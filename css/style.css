@@ -1,7 +1,8 @@
 /* Start global rules  */
 :root {
   --main-color: #2f89fc;
-  --sec-color: #7d7d7d;
+  --sec-color: #8f8f8f;
+  --padding-section: 120px;
 }
 
 html {
@@ -310,15 +311,101 @@ header .container {
 /* End Landing  */
 /* Start About  */
 .about {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 .about .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
 }
-.about .container img {
-  height: 300px;
+.about .container .image {
+  position: relative;
+  flex-basis: 30%;
 }
-.about .container .content .box {
-  display: flex;
+.about .container .image img {
+  height: 400px;
+}
+.about .container .image .rec {
+  position: absolute;
+  width: 267.14px;
+  height: 350px;
+  top: -45px;
+  left: 85px;
+  border: 15px solid var(--main-color);
+  z-index: -1;
+}
+.about .container .content {
+  flex-basis: 58%;
+  position: relative;
+}
+.about .container .content h1 {
+  font-size: 150px;
+  color: rgb(255, 255, 255, 13%);
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: -1;
+  top: -75px;
+  right: 190px;
+}
+.about .container .content h2 {
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #e6e6e6;
+}
+.about .container .content p {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--sec-color);
 }
 
+.about .container .content .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .container .content .box .list ul.first {
+  padding-inline-start: 0;
+  list-style: square inside;
+  color: var(--sec-color);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1.3px;
+}
+.about .list ul.first > li:not(:first-child) {
+  margin: 35px 0;
+}
+.about .container .content .box .list ul.second {
+  padding-inline-start: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.about .list ul.second > li:not(:first-child) {
+  margin: 5px 0;
+}
+.about .container .content .links {
+  margin-top: 18px;
+}
+.about .container .content .links a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.about .container .content .links a:first-child {
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+.about .container .content .links a:last-child {
+  border: 2px solid var(--main-color);
+  margin-left: 20px;
+}
 /* End About  */
