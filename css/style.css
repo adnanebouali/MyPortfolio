@@ -311,13 +311,14 @@ header .container {
 /* End Landing  */
 /* Start About  */
 .about {
-  padding-top: var(--padding-section);
+  padding-top: calc(var(--padding-section) + 5px);
   padding-bottom: var(--padding-section);
 }
 .about .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 .about .container .image {
@@ -329,17 +330,18 @@ header .container {
 }
 .about .container .image .rec {
   position: absolute;
-  width: 267.14px;
-  height: 350px;
+  width: 310.14px;
+  height: 375px;
   top: -45px;
-  left: 85px;
+  left: 45px;
   border: 15px solid var(--main-color);
   z-index: -1;
 }
 .about .container .content {
-  flex-basis: 58%;
+  flex-basis: 60%;
   position: relative;
 }
+
 .about .container .content h1 {
   font-size: 150px;
   color: rgb(255, 255, 255, 13%);
@@ -407,5 +409,66 @@ header .container {
 .about .container .content .links a:last-child {
   border: 2px solid var(--main-color);
   margin-left: 20px;
+  margin-top: 20px;
 }
+@media (max-width: 1199px) {
+  .about .container .content {
+    flex-basis: 55%;
+    position: relative;
+  }
+  .about .list ul.first > li:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .about .container .image {
+    position: relative;
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .about .container .content {
+    margin-top: 90px;
+    flex-basis: 100%;
+    position: relative;
+  }
+  .about .container .image .rec {
+    transform: translate(-50%, -50%);
+    width: 310.14px;
+    height: 375px;
+    top: 37%;
+    left: 57%;
+  }
+}
+@media (max-width: 767px) {
+  .about .container .content h1 {
+    display: none;
+  }
+  .about .container .content {
+    margin-top: 10px;
+  }
+  .about .container .content p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 338px) {
+  .about .container .image img {
+    height: 330px;
+  }
+  .about .container .image .rec {
+    display: none;
+  }
+  .about .container .content .links a {
+    font-size: 14px;
+  }
+  .about .container .content .box .list ul.second {
+    padding-inline-start: 85px;
+  }
+  .about .list ul.first > li:not(:first-child) {
+    margin: 15px 0;
+  }
+  .about .list:last-child {
+    margin: -15px 0;
+  }
+}
+
 /* End About  */
