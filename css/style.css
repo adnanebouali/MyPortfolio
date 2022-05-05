@@ -613,6 +613,32 @@ header .container {
   padding-bottom: var(--padding-section);
   background-color: #141414ce;
 }
+.portfolio .content {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+.portfolio .content .box {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .portfolio .content .box {
+    flex-basis: 49%;
+  }
+}
+@media (min-width: 1199px) {
+  .portfolio .content .box {
+    flex-basis: 24%;
+  }
+}
+
+.portfolio .content .box img {
+  max-width: 100%;
+}
 /* End Portfolio */
 /* Start Contact */
 .contact {
