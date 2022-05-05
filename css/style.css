@@ -368,7 +368,19 @@ header .container {
   padding-top: calc(var(--padding-section) + 20px);
   padding-bottom: var(--padding-section);
 }
-
+.about .main-heading {
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .about .main-heading {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding-top: calc(var(--padding-section));
+  }
+}
 .about .container {
   display: flex;
   flex-wrap: wrap;
@@ -560,7 +572,14 @@ header .container {
     letter-spacing: 0.5px;
   }
 }
-
+@media (max-width: 480px) {
+  .about .container .image img {
+    height: 300px;
+  }
+  .about .container .image .rec {
+    display: none;
+  }
+}
 @media (max-width: 338px) {
   .about .container .image img {
     height: 300px;
@@ -588,6 +607,13 @@ header .container {
 }
 
 /* End About  */
+/* Start Portfolio */
+.portfolio {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  background-color: #141414ce;
+}
+/* End Portfolio */
 /* Start Contact */
 .contact {
   padding-top: var(--padding-section);
@@ -597,10 +623,9 @@ header .container {
   color: white;
   text-align: center;
 }
-
 .contact .container .content a {
   margin: 0 auto;
-  padding: 10px 5px;
+  padding: 8px 5px;
   display: block;
   width: fit-content;
   text-decoration: none;
@@ -610,7 +635,7 @@ header .container {
   transition: 0.2s ease;
 }
 .contact .container .content a:nth-of-type(2) {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 .contact .container i {
   font-size: 28px;
