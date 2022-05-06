@@ -65,7 +65,7 @@ body:after {
   transform: rotate(-30deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   body:before {
     top: 450px;
     left: -200px;
@@ -376,7 +376,7 @@ header .container {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about {
     padding-top: calc(var(--padding-section));
   }
@@ -572,7 +572,7 @@ header .container {
     letter-spacing: 0.5px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .about .container .image img {
     height: 300px;
   }
@@ -644,7 +644,7 @@ header .container {
     flex-basis: 49%;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .portfolio .content .box {
     flex-basis: 24%;
   }
