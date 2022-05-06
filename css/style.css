@@ -647,7 +647,7 @@ footer span {
   font-size: 20px;
 }
 #myBtn i {
-  padding: 10px;
+  padding: 8px;
 }
 #myBtn:hover {
   animation: top 0.3s alternate infinite ease-in-out;
