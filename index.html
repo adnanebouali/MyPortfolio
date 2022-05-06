@@ -18,28 +18,9 @@
   <body>
     <!-- Start header -->
     <header>
-      <div class="container">
-        <button class="toggle-btn">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-        <nav class="navigation">
-          <ul>
-            <li class="link"><a href="#home">Home</a></li>
-            <li class="link"><a href="#about">About</a></li>
-            <li class="link"><a href="#portfolio">Prtfolio</a></li>
-            <li class="link"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="container"></div>
     </header>
-    <script>
-      const toggleBtn = document.querySelector(".toggle-btn");
-      toggleBtn.addEventListener("click", () => {
-        toggleBtn.classList.toggle("active");
-      });
-    </script>
+    <script></script>
     <!-- End header -->
     <!-- Start Landing -->
     <div class="landing" id="home">
@@ -216,6 +197,7 @@
           </div>
         </div>
       </div>
+      <a href="">See More</a>
     </div>
     <!-- End Portfolio  -->
     <!-- Start Contact  -->
@@ -260,5 +242,30 @@
       Adnane Bouali
     </footer>
     <!-- End Footer  -->
+    <!-- Start Button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+    <script>
+      mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 400 ||
+          document.documentElement.scrollTop > 400
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    <!-- End Button to top  -->
   </body>
 </html>
