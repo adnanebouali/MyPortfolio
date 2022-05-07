@@ -134,8 +134,56 @@ header {
 header .container {
   position: relative;
   top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
 }
-
+header .container .links .burger-icon {
+  width: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+header .container .links .burger-icon span {
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 6px;
+}
+header .container .links .burger-icon span.half {
+  width: 60%;
+  transition: 0.3s;
+}
+header .container .links:hover .burger-icon span.half {
+  width: 100%;
+}
+header .container .links ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #d2d2d2;
+  right: 15px;
+  min-width: 250px;
+  display: none;
+}
+header .container .links:hover ul {
+  display: block;
+}
+header .container .links ul li:not(:last-child) {
+  border-bottom: 1px solid var(--sec-color);
+}
+header .container .links ul li a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  color: black;
+  transition: 0.3s;
+  font-size: 18px;
+}
+header .container .links ul li a:hover {
+  padding-left: 25px;
+  color: var(--main-color);
+}
 /* End Header  */
 /* Start Landing  */
 .landing {
@@ -211,6 +259,11 @@ header .container {
   flex-wrap: wrap;
   gap: 35px;
   padding: 0 25px;
+}
+@media (orientation: landscape) {
+  .landing .intro .social {
+    bottom: -70px;
+  }
 }
 .landing .intro .social a {
   text-decoration: none;
