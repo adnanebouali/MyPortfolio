@@ -325,6 +325,9 @@ header .container .links ul li a:hover {
   position: relative;
   flex-basis: 30%;
 }
+#tilt {
+  transition: transform 0.1s;
+}
 
 .about .container .image img {
   height: 400px;

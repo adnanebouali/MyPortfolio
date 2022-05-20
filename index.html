@@ -33,7 +33,6 @@
         </div>
       </div>
     </header>
-    <script></script>
     <!-- End header -->
     <!-- Start Landing -->
     <div class="landing" id="home">
@@ -98,9 +97,10 @@
         <p>Let me introduce myself</p>
       </div>
       <div class="container">
-        <div class="image">
+        <div class="image" id="tilt">
           <img src="images/Me.png" alt="My Pic" /> <span class="rec"></span>
         </div>
+
         <div class="content">
           <h1>About</h1>
           <h2>Hey, my name is Adnane Bouali</h2>
@@ -306,26 +306,8 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>
     </button>
-    <script>
-      mybutton = document.getElementById("myBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 400 ||
-          document.documentElement.scrollTop > 400
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-    </script>
+    <script src="/js/javascript.js"></script>
+
     <!-- End Button to top  -->
   </body>
 </html>
