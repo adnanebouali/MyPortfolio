@@ -328,11 +328,7 @@ header .container .links .burger-icon {
   gap: 35px;
   padding: 0 25px;
 }
-@media (orientation: landscape) {
-  .landing .intro .social {
-    bottom: -70px;
-  }
-}
+
 .landing .intro .social a {
   text-decoration: none;
   color: white;
@@ -365,7 +361,7 @@ header .container .links .burger-icon {
 /* End Landing  */
 /* Start About  */
 .about {
-  padding-top: calc(var(--padding-section) + 45px);
+  padding-top: calc(var(--padding-section) + 15px);
   padding-bottom: var(--padding-section);
 }
 .about .main-heading {
