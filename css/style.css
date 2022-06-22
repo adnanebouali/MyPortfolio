@@ -763,11 +763,12 @@ footer span {
   background-color: var(--main-color);
   color: white;
   cursor: pointer;
-  padding: 5px;
-  font-size: 20px;
+  padding: 10px 10px 8px;
 }
-#myBtn i {
-  padding: 8px;
+#myBtn svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 #myBtn:hover {
   animation: top 0.3s alternate infinite ease-in-out;
@@ -778,5 +779,10 @@ footer span {
     bottom: 32px;
   }
 }
-
+@media (max-width: 767px) {
+  #myBtn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
 /* end button to top  */
