@@ -148,30 +148,15 @@
       Adnane Bouali
     </footer>
     <!-- End Footer  -->
-    <!-- Start Button to top  -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa-solid fa-angles-up"></i>
-    </button>
-    <script>
-      mybutton = document.getElementById("myBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 400 ||
-          document.documentElement.scrollTop > 400
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-    </script>
-    <!-- End Button to top  -->
+      <!-- Start Button to top  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+      <path fill="currentColor"
+        d="m7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+    </svg>
+  </button>
+  <script src="js/javascript.js"></script>
+
+  <!-- End Button to top  -->
   </body>
 </html>
