@@ -1,239 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Syne+Mono&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="images/icon.png" />
+    <title>Adnane Bouali</title>
+  </head>
 
-  <title>Adnane Bouali</title>
-</head>
-
-<body>
-  <!-- Start header -->
-  <header>
-    <div class="container">
-      <div class="links">
-        <div class="burger-icon">
-          <span></span><span class="half"></span><span></span>
-        </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <!-- End header -->
-  <!-- Start Landing -->
-  <div class="landing" id="home">
-    <div class="intro">
-      <span>Hello,</span>
-      <h1>I'm Adnane Bouali</h1>
-      <p>| Web Developer | UI Designer |</p>
-      <a class="aa" href="#about">More About Me </a>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/adnane-bouali/" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/adnane_bouali_" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/_adnane_bouali/" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/adnane.bouali.dz" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://github.com/adnanebouali/" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-github-alt"></i></a>
-        <a href="https://www.behance.net/adnanebouali" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-behance"></i></a>
-        <a href="https://codepen.io/adnane-bouali" target="_blank" rel="noreferrer noopener"><i
-            class="fa-brands fa-codepen"></i></a>
-      </div>
-    </div>
-  </div>
-  <!-- End Landing -->
-
-  <!-- Start About  -->
-
-  <div class="about" id="about">
-    <div class="main-heading">
-      <h1>About</h1>
-      <p>Let me introduce myself</p>
-    </div>
-    <div class="container">
-      <div class="image" id="tilt">
-        <img src="images/Me.png" alt="My Pic" /> <span class="rec"></span>
-      </div>
-      <div class="content">
-        <h1>About</h1>
-        <h2>Hey, my name is Adnane Bouali</h2>
-        <p>
-          Passionate about learning designing and building web applications, I
-          primarily focus on writing clean and efficient code, highly
-          motivated and disciplined, i have the spirit of group work and good
-          communication with people.
-        </p>
-        <div class="box">
-          <div class="list">
-            <ul class="first">
-              <li>
-                Degree : Bachelor degree in
-                <span title='Computer Scince " Software Engineering  "'>CS</span>
-              </li>
-              <li>
-                University :<a href="https://www.univ-constantine2.dz/?lang=en"
-                  title="Constantine 2 Abdelhamid Mehri University" target="_blank" rel="noreferrer noopener">
-                  Constantine 2 University</a>
-              </li>
-              <li> Interests : Artificial Intelligence</li>
-              <li> Languages : Arabic, English</li>
-            </ul>
-          </div>
-          <div class="list">
-            <ul class="first">
-              <li>
-                Skills :
-                <ul class="second">
-                  <li>HTML5, CSS3, JavaScript</li>
-                  <li>Python</li>
-                  <li>MySQL</li>
-                  <li>Git-GitHub</li>
-                  <li>Figma</li>
-                  <li>MS word, Excel, PowerPoint</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <body>
+    <!-- Start header -->
+    <header>
+      <div class="container">
         <div class="links">
-          <a href="images/Adnane Bouali CV.pdf" target="_blank" rel="noreferrer noopener" title="Downlaod CV"
-            download>Downlaod CV
-          </a>
-          <a href="#contact" title="Hire Me">Hire Me</a>
+          <div class="burger-icon">
+            <span></span><span class="half"></span><span></span>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <!-- Start Landing -->
+    <div class="landing" id="home">
+      <div class="intro">
+        <span>Hello,</span>
+        <h1>I'm Adnane Bouali</h1>
+        <p>| Web Developer | UI Designer |</p>
+        <a class="aa" href="#about">More About Me </a>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/adnane-bouali/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://twitter.com/adnane_bouali_"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_adnane_bouali/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/adnane.bouali.dz"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://github.com/adnanebouali/"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a
+            href="https://www.behance.net/adnanebouali"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a
+            href="https://codepen.io/adnane-bouali"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-brands fa-codepen"></i
+          ></a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End About  -->
-<!-- Start Portfolio  -->
-  <div class="portfolio" id="portfolio">
-    <div class="main-heading">
-      <h1>Portfolio</h1>
-      <p>Checkout a few of my works</p>
-    </div>
-    <div class="content">
-      <div class="box">
-        <img src="images/model11.png" alt="" />
-        <div class="work-links">
-          <a href="https://adnanebouali.github.io/Template-sx/" target="_blank" rel="noreferrer noopener">
-            <i class="fa-solid fa-eye"></i></a>
-        </div>
-         </div>
-      <div class="box">
-        <img src="images/model9.png" alt="" />
-        <div class="work-links">
-          <a href="https://adnanebouali.github.io/Template-five/" target="_blank" rel="noreferrer noopener">
-            <i class="fa-solid fa-eye"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model10.png" alt="" />
-        <div class="work-links">
-          <a href="https://adnanebouali.github.io/Template-four/" target="_blank" rel="noreferrer noopener">
-            <i class="fa-solid fa-eye"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model1.png" alt="" />
-        <div class="work-links">
-          <a href="https://www.behance.net/gallery/142445205/My-Links" target="_blank" rel="noreferrer noopener"><i
-              class="fa-brands fa-behance"></i></a>
-          <a href="https://adnanebouali.github.io/MyLinks/" target="_blank" rel="noreferrer noopener">
-            <i class="fa-solid fa-eye"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model2.png" alt="" />
-        <div class="work-links">
-          <a href="https://adnanebouali.github.io/MyTools/" target="_blank" rel="noreferrer noopener">
-            <i class="fa-solid fa-eye"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model3.png" alt="" />
-        <div class="work-links">
-          <a href="https://www.behance.net/gallery/137486911/simple-designer-Portfolio" target="_blank"
-            rel="noreferrer noopener"><i class="fa-brands fa-behance"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model4.png" alt="" />
-        <div class="work-links">
-          <a href="https://www.behance.net/gallery/138829955/The-wolf-of-wall-street" target="_blank"
-            rel="noreferrer noopener"><i class="fa-brands fa-behance"></i></a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="images/model5.png" alt="" />
-        <div class="work-links">
-          <a href="https://www.behance.net/gallery/138827683/Plants-lovers" target="_blank" rel="noreferrer noopener"><i
-              class="fa-brands fa-behance"></i></a>
-        </div>
-      </div>
+    <!-- End Landing -->
 
-    </div>
-    <a href="Pages/portfolio.html" class="see-more" >See More</a>
-  </div>
-  <!-- End Portfolio  -->
-  <!-- Start Contact  -->
-  <div class="contact" id="contact">
-    <div class="container">
+    <!-- Start About  -->
+
+    <div class="about" id="about">
       <div class="main-heading">
-        <h1>Contact</h1>
-        <p>Get in touch with me</p>
+        <h1>About</h1>
+        <p>Let me introduce myself</p>
+      </div>
+      <div class="container">
+        <div class="image" id="tilt">
+          <img src="images/Me.png" alt="My Pic" /> <span class="rec"></span>
+        </div>
+        <div class="content">
+          <h1>About</h1>
+          <h2>Hey, my name is Adnane Bouali</h2>
+          <p>
+            Passionate about learning designing and building web applications, I
+            primarily focus on writing clean and efficient code, highly
+            motivated and disciplined, i have the spirit of group work and good
+            communication with people.
+          </p>
+          <div class="box">
+            <div class="list">
+              <ul class="first">
+                <li>
+                  Degree : Bachelor degree in
+                  <span title='Computer Scince " Software Engineering  "'
+                    >CS</span
+                  >
+                </li>
+                <li>
+                  University :<a
+                    href="https://www.univ-constantine2.dz/?lang=en"
+                    title="Constantine 2 Abdelhamid Mehri University"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Constantine 2 University</a
+                  >
+                </li>
+                <li>Interests : Books</li>
+                <li>Languages : Arabic, English</li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul class="first">
+                <li>
+                  Skills :
+                  <ul class="second">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>Git-GitHub</li>
+                    <li>Figma</li>
+                    <li>MS word, Excel, PowerPoint</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="links">
+            <a
+              href="images/Adnane Bouali CV.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Downlaod CV"
+              download
+              >Downlaod CV
+            </a>
+            <a href="#contact" title="Hire Me">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About  -->
+    <!-- Start Portfolio  -->
+    <div class="portfolio" id="portfolio">
+      <div class="main-heading">
+        <h1>Portfolio</h1>
+        <p>Checkout a few of my works</p>
       </div>
       <div class="content">
-        <a href="mailto:boualiadnanedz@gmail.com" target="_blank" rel="noreferrer noopener"><i
-            class="fa-solid fa-envelope"></i></a>
-        <a href="mailto:boualiadnanedz@gmail.com" target="_blank" rel="noreferrer noopener">boualiadnanedz@gmail.com</a>
-        <a href="https://api.whatsapp.com/send?phone=673100459" target="_blank" rel="noreferrer noopener"><i
-            class="fa-solid fa-phone"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=673100459" target="_blank" rel="noreferrer noopener">+213
-          673100459</a>
+        <div class="box">
+          <img src="images/model11.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://adnanebouali.github.io/Template-sx/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <i class="fa-solid fa-eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model9.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://adnanebouali.github.io/Template-five/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <i class="fa-solid fa-eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model10.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://adnanebouali.github.io/Template-four/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <i class="fa-solid fa-eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model1.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://www.behance.net/gallery/142445205/My-Links"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+            <a
+              href="https://adnanebouali.github.io/MyLinks/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <i class="fa-solid fa-eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model2.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://adnanebouali.github.io/MyTools/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <i class="fa-solid fa-eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model3.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://www.behance.net/gallery/137486911/simple-designer-Portfolio"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model4.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://www.behance.net/gallery/138829955/The-wolf-of-wall-street"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/model5.png" alt="" />
+          <div class="work-links">
+            <a
+              href="https://www.behance.net/gallery/138827683/Plants-lovers"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a href="Pages/portfolio.html" class="see-more">See More</a>
+    </div>
+    <!-- End Portfolio  -->
+    <!-- Start Contact  -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="main-heading">
+          <h1>Contact</h1>
+          <p>Get in touch with me</p>
+        </div>
+        <div class="content">
+          <a
+            href="mailto:boualiadnanedz@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="mailto:boualiadnanedz@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            >boualiadnanedz@gmail.com</a
+          >
+          <a
+            href="https://api.whatsapp.com/send?phone=673100459"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=673100459"
+            target="_blank"
+            rel="noreferrer noopener"
+            >+213 673100459</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End Contact  -->
-  <!-- Start Footer  -->
-  <footer>
-    Copyright &copy;2022 All Right Reseved | Made With <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-        <path fill="currentColor"
-          d="M923 283.6a260.04 260.04 0 0 0-56.9-82.8a264.4 264.4 0 0 0-84-55.5A265.34 265.34 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39c-10 6.1-19.5 12.8-28.5 20.1c-9-7.3-18.5-14-28.5-20.1c-41.8-25.5-89.9-39-139.2-39c-35.5 0-69.9 6.8-102.4 20.3c-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9c0 33.3 6.8 68 20.3 103.3c11.3 29.5 27.5 60.1 48.2 91c32.8 48.9 77.9 99.9 133.9 151.6c92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3c56-51.7 101.1-102.7 133.9-151.6c20.7-30.9 37-61.5 48.2-91c13.5-35.3 20.3-70 20.3-103.3c.1-35.3-7-69.6-20.9-101.9z" />
-      </svg></span> By
-    Adnane Bouali
-  </footer>
-  <!-- End Footer  -->
-  <!-- Start Button to top  -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
-      <path fill="currentColor"
-        d="m7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-    </svg>
-  </button>
-  <script src="js/javascript.js"></script>
+    <!-- End Contact  -->
+    <!-- Start Footer  -->
+    <footer>
+      Copyright &copy;2022 All Right Reseved | Made With
+      <span
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="1em"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M923 283.6a260.04 260.04 0 0 0-56.9-82.8a264.4 264.4 0 0 0-84-55.5A265.34 265.34 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39c-10 6.1-19.5 12.8-28.5 20.1c-9-7.3-18.5-14-28.5-20.1c-41.8-25.5-89.9-39-139.2-39c-35.5 0-69.9 6.8-102.4 20.3c-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9c0 33.3 6.8 68 20.3 103.3c11.3 29.5 27.5 60.1 48.2 91c32.8 48.9 77.9 99.9 133.9 151.6c92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3c56-51.7 101.1-102.7 133.9-151.6c20.7-30.9 37-61.5 48.2-91c13.5-35.3 20.3-70 20.3-103.3c.1-35.3-7-69.6-20.9-101.9z"
+          /></svg
+      ></span>
+      By Adnane Bouali
+    </footer>
+    <!-- End Footer  -->
+    <!-- Start Button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill="currentColor"
+          d="m7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+        />
+      </svg>
+    </button>
+    <script src="js/javascript.js"></script>
 
-  <!-- End Button to top  -->
-</body>
-
+    <!-- End Button to top  -->
+  </body>
 </html>
