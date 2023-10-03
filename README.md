@@ -1,2 +1,1 @@
-# Myportfolio
-myportfolio is a static website introduce some info about me (the skills that i have, my education and a few of my works)
+My portfolio is a static website that introduces some information about me, including the skills I possess, my education, and a few examples of my work.
