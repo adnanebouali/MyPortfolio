@@ -88,7 +88,7 @@ const currentYear = new Date().getFullYear();
 const copyrightElement = document.getElementById("copyright");
 
 // Set the innerHTML of the copyright element to include the current year
-copyrightElement.innerHTML = `Copyright &copy; ${currentYear} All Rights Reseved | Made With
+copyrightElement.innerHTML = `Copyright &copy; ${currentYear} All Rights Reserved | Made With
 <span>
   <svg
     xmlns="http://www.w3.org/2000/svg"
