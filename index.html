@@ -14,7 +14,14 @@
       rel="stylesheet"
     />
     <link rel="icon" href="images/icon.png" />
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("8asooLetvKZbhhsJ8");
+})();
+</script>
     <title>Adnane Bouali</title>
   </head>
 
@@ -270,22 +277,23 @@
       </div>
       <div class="container">
         <div class="holder">
-          <form action="">
+          <form id="myForm" action="">
             <div class="field">
               <label for="">name</label>
-              <input type="text" name="" id="" placeholder="John Smith" required>
+              <input type="text" name="" id="fullName" placeholder="John Smith" required>
             </div>
             <div class="field">
               <label for="">email</label>
-              <input type="email" name="" id="" placeholder="johnsmith@example.com" required>
+              <input type="email" name="" id="email_id" placeholder="johnsmith@example.com" required>
             </div>
             <div class="field">
               <label for="">message</label>
-              <textarea placeholder="🚀 You want to build something amazing together? Drop me a line ✉️ and let's get started 💻" name="" id="" required></textarea>
+              <textarea id="message" placeholder="🚀 You want to build something amazing together? Drop me a line ✉️ and let's get started 💻" name="" id="" required></textarea>
             </div>
             <div class="field button">
-              <input type="submit" value="Send Message">
+              <input type="submit" value="Send Message" onclick="sendMail()">
             </div>
+            <div id="successMessage" style="display: none; color: green;">Message sent successfully!</div>
           </form>
           <div class="social">
             <a href="https://wa.me/+213673100459">
@@ -320,5 +328,6 @@
     <script src="js/javascript.js"></script>
 
     <!-- End Button to top  -->
+
   </body>
 </html>
