@@ -143,6 +143,7 @@ ul {
   color: #ffffff;
 }
 /* End Components  */
+
 /* Start Header  */
 header {
   position: absolute;
@@ -673,8 +674,8 @@ header .container .links .burger-icon {
 }
 .contact .container {
   display: flex;
-justify-content: center;
-justify-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 .contact .holder form {
   display: flex;
@@ -696,7 +697,6 @@ justify-items: center;
   text-transform: capitalize;
   color: rgb(210, 210, 210);
   font-size: 15px;
-
 }
 
 .contact .holder form .field input,
@@ -716,14 +716,14 @@ textarea:focus {
   outline: none;
   background-color: #2f88fc18;
 }
-.contact .holder form .field input:focus::placeholder,textarea:focus::placeholder{
-color: transparent;
+.contact .holder form .field input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
 }
 .contact .holder form .field textarea {
   height: 150px;
 }
 .contact .holder form .field.button {
-  
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
@@ -755,10 +755,9 @@ color: transparent;
   box-shadow: 6px 6px 0 0 var(--main-color);
   background-color: transparent;
 }
-  .contact .holder .social {
+.contact .holder .social {
   display: flex;
   gap: 15px;
-  
 }
 .contact .holder .social a {
   width: 40px;

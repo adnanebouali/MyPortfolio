@@ -4,7 +4,6 @@ let el = document.getElementById("tilt");
 /* Get the height and width of the element */
 const height = el.clientHeight;
 const width = el.clientWidth;
-
 /*
  * Add a listener for mousemove event
  * Which will trigger function 'handleMove'
@@ -105,7 +104,7 @@ copyrightElement.innerHTML = `Copyright &copy; ${currentYear} All Rights Reserve
   </svg>
 </span>
 By Adnane Bouali`;
-// ---------------------
+
 function sendMail() {
   var fullName = document.getElementById("fullName").value;
   var email_id = document.getElementById("email_id").value;
@@ -113,28 +112,25 @@ function sendMail() {
 
   // Check if the required fields are empty
   if (!fullName || !email_id || !message) {
-    return; // Prevent sending the email if any of the required fields are empty
+    return;
   }
 
-  // Regular expression pattern to validate email format
-  var emailPattern = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+  var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (!emailPattern.test(email_id)) {
     alert("❌ Please enter a valid email address. ❌");
-    return; // Prevent sending the email if the email is not in a valid format
+    return;
   }
-
   var params = {
     from_name: fullName,
     email_id: email_id,
     message: message,
-  }
+  };
+  emailjs
+    .send("service_o35zb8m", "template_598dvd3", params)
+    .then(function (res) {
+      alert("Your Message Has Been Sent Successfully! 😊");
 
-  emailjs.send("service_o35zb8m", "template_598dvd3", params).then(function (res) {
-    alert("Your Message Has Been Sent Successfully! 😊");
-
-    // Reset the form to clear all fields
-    document.getElementById("myForm").reset();
-  });
+      document.getElementById("myForm").reset();
+    });
 }
-
