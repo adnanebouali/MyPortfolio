@@ -130,7 +130,6 @@ function sendMail() {
     .send("service_o35zb8m", "template_598dvd3", params)
     .then(function (res) {
       alert("Your Message Has Been Sent Successfully! 😊");
-
       document.getElementById("myForm").reset();
     });
 }
